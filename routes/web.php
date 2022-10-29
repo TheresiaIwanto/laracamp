@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    // dd('HALO');
     return view('welcome');
+})->name('welcome');
+
+Route::get('/checkout/{code}', function () {
+    // dd('HALO');
+    return view('checkout.create');
 });
